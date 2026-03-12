@@ -1,0 +1,39 @@
+# Android build artifacts
+android/app/build/
+android/.gradle/
+android/build/
+android/**/*.iml
+android/.idea/
+android/.cxx/
+
+# Compiled JS bundles
+*.jsbundle
+*.bundle.map
+
+# Sensitive / signing files
+google-services.json
+*.keystore
+*.jks
+*.p12
+
+# Release APKs / AABs
+*.apk
+*.aab
+
+# Gradle wrapper binary
+android/gradle/wrapper/gradle-wrapper.jar
+
+# Node
+node_modules/
+.expo/
+npm-debug.*
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
+!.env.example
