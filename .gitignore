@@ -16,6 +16,9 @@ google-services.json
 *.jks
 *.p12
 
+# Contains API keys — keep off repo
+android/app/src/main/AndroidManifest.xml
+
 # Release APKs / AABs
 *.apk
 *.aab
