@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "WhatsGoodHere",
+    "slug": "WhatsGoodHere",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "whatsgoodhere",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF6B35"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tekphreak.whatsgoodhere"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#FF6B35"
+      },
+      "package": "com.tekphreak.whatsgoodhere",
+      "versionCode": 2,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "VIBRATE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "$(GOOGLE_MAPS_API_KEY)"
+        }
+      },
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "WhatsGoodHere needs camera access to upload venue photos."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "WhatsGoodHere needs location access to find venues near you."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "WhatsGoodHere needs photo library access to upload venue photos."
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
